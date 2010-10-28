@@ -18,7 +18,9 @@
 	width: 100px;
 }
 .second .richComboList a{
+	color: #000;
 	display: block;
+	text-decoration: none;
 	width: 100%;
 }
 .second .ui-state-hover{
