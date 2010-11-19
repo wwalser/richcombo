@@ -7,7 +7,8 @@ $.widget( "ui.richcombo", {
 	options: {
 		maxHeight: null,
 		position: null,
-		appendTo: null
+		appendTo: null,
+		containerClass: null
 	},
 	_create: function() {
 		var self = this,
@@ -71,7 +72,9 @@ $.widget( "ui.richcombo", {
 
 		this.element.hide();		
 		richCombo.appendTo(richComboContainer);
-		richComboContainer.appendTo( self.options.appendTo || 'body');
+		richComboContainer
+			.appendTo(self.options.appendTo || 'body')
+			.addClass(self.options.containerClass);
 		this.element.after(richComboButton);
 
 		if (maxHeight && richCombo.height() > maxHeight) {

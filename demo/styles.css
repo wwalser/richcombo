@@ -1,4 +1,6 @@
 /*How to style a rich combo*/
+/* first has no styles */
+/* second has very straightforward styles */
 .second .richComboButton {
 	background-color: #E3E3E3;
 	border: 1px solid #939393;
@@ -10,19 +12,48 @@
 .second .richComboButton:hover{
 	background-color: #f3f3f3;
 }
-.second .richComboList{
+.secondComboContainer .richComboList{
 	background-color: #f5f5f5;
 	border: 1px solid #939393;
 	list-style: none;
 	padding: 0px;
 	width: 100px;
 }
-.second .richComboList a{
+.secondComboContainer .richComboList a{
 	color: #000;
 	display: block;
 	text-decoration: none;
 	width: 100%;
 }
-.second .ui-state-hover{
+.secondComboContainer .ui-state-hover{
+	background-color: #e3e3e3;
+}
+
+/* third is similar to second with background images for icons */
+.third .richComboButton {
+	background-color: #E3E3E3;
+	border: 1px solid #939393;
+	color: #000;
+	display: block;
+	text-decoration: none;
+	width: 100px;
+}
+.third .richComboButton:hover{
+	background-color: #f3f3f3;
+}
+.thirdComboContainer .richComboList{
+	background-color: #f5f5f5;
+	border: 1px solid #939393;
+	list-style: none;
+	padding: 0px;
+	width: 100px;
+}
+.thirdComboContainer .richComboList a{
+	color: #000;
+	display: block;
+	text-decoration: none;
+	width: 100%;
+}
+.thirdComboContainer .ui-state-hover{
 	background-color: #e3e3e3;
 }
